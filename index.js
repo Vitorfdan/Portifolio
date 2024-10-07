@@ -24,13 +24,13 @@
 
     document.addEventListener('DOMContentLoaded', function() {
         // Inicialize com a sua Public Key do EmailJS
-        emailjs.init('tdy0Q3FuiQYYl60ey'); // Substitua pelo seu Public Key
+        emailjs.init('KxHQZ8OWKgqE3RMUA'); // Substitua pelo seu Public Key
     
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
     
             // Envie o formulário usando o Service ID e Template ID corretos
-            emailjs.sendForm('service_kdn8yd2', 'template_her3aao', this)
+            emailjs.sendForm('service_0qanhhq', 'template_ffni97r', this)
                 .then(function(response) {
                     console.log('Mensagem enviada com sucesso!', response);
                     alert('Mensagem enviada com sucesso!');
