@@ -1,0 +1,453 @@
+/*ESTILO GERAL */
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+
+/* ESTILO DO CABECALHO */
+header {
+  padding: 20px 0;
+  background-color: #1a1a1a;
+}
+
+header .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #d4d4d4;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.1); 
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+header .btn-contato button {
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(0,223,94);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+header .btn-contato button:hover {
+  box-shadow: 0px 0px 15px #00ff08;
+}
+
+/* ESTILO topo site */
+/* Cores: verde: rgb(0,223,94) */
+
+
+
+
+.capa p {
+  color: #605b5b;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
+.sobre_mim > .opa {
+  
+  
+
+}
+
+.sobre {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.h2{
+  color: rgb(0,223,94);
+  text-align: center;
+}
+.texto_sobre {
+  color: #787777;
+  text-align: center;
+}
+
+.sobre_mim {
+  margin-bottom: 55px;
+}
+
+.imagem_principal {
+  height: 320px;
+}
+
+.capa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 720px;
+}
+
+.mini_contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini_titulos {
+  font-size: 13px;
+}
+
+.card {
+  display: flex;
+  height: 70px;
+  width: 350px;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4,.card .social-link5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background-color: #242c34;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background-color: #5865f2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link5:hover {
+  background-color: #ff8000;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.estudando {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.img_estudando{
+  display: flex;
+  max-width: 30px;
+  border-radius: 5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.linguas {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.h7 {
+  color: rgb(0,223,94);
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.card_titulo {
+display: flex;
+justify-content: center;
+}
+
+
+.card_ {
+  padding-top: 22vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: solid;
+  
+  
+
+}
+
+.card_ img {
+  max-width: 180px;
+}
+
+.projetos {
+  padding-top: 22vh;
+}
+
+.card .card_title {
+  font-size: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projetos {
+  text-align: center;
+  padding-top: 22vh;
+}
+
+.card_titulo h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.card_ {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1a1a1a;  
+  max-width: 300px;
+}
+
+.card_ img {
+  max-width: 180px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card_title h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.card_descricao p {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.card_botao button {
+  padding: 10px 15px;
+  background-color: rgb(0,223,94);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card_botao button:hover {
+box-shadow: 0px 0px 15px #00ff08
+
+
+
+
+
+}
+
+
+
+
+.card_botao button:hover {
+transform: scale(1.05); /* Efeito de zoom */
+}
+
+.card_botao button:active {
+transform: scale(1.1); /* Efeito de zoom maior ao clicar */
+}
+
+
+
+
+
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #888;
+}
+
+#form_btn123 {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#form_btn123:hover {
+  background-color: #444;
+}
+
+#message {
+  height: 200px;
+}
+
+
+.titulo_contato {
+  padding: 30px;
+}
+
+
+
+.btn-contato {
+  color: #1a1a1a;
+}
