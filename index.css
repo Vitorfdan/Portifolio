@@ -130,13 +130,13 @@ h2 {
   font-size: 13px;
 }
 
-.card {
+.cards {
   display: flex;
   height: 70px;
   width: 350px;
 }
 
-.card svg {
+.cards svg {
   position: absolute;
   display: flex;
   width: 60%;
@@ -150,7 +150,7 @@ h2 {
   cursor: pointer;
 }
 
-.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4,.card .social-link5 {
+.cards .social-link1,.cards .social-link2,.cards .social-link3,.cards .social-link4,.cards .social-link5 {
   position: relative;
   display: flex;
   align-items: center;
@@ -163,11 +163,11 @@ h2 {
   border-radius: 50px;
 }
 
-.card svg {
+.cards svg {
   transform: scale(1);
 }
 
-.card .social-link1:hover {
+.cards .social-link1:hover {
   background: #f09433;
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
@@ -176,22 +176,22 @@ h2 {
   animation: bounce_613 0.4s linear;
 }
 
-.card .social-link2:hover {
+.cards .social-link2:hover {
   background-color: #242c34;
   animation: bounce_613 0.4s linear;
 }
 
-.card .social-link3:hover {
+.cards .social-link3:hover {
   background-color: #5865f2;
   animation: bounce_613 0.4s linear;
 }
 
-.card .social-link4:hover {
+.cards .social-link4:hover {
   background-color: #0a66c2;
   animation: bounce_613 0.4s linear;
 }
 
-.card .social-link5:hover {
+.cards .social-link5:hover {
   background-color: #ff8000;
   animation: bounce_613 0.4s linear;
 }
@@ -216,6 +216,7 @@ h2 {
 
 .estudando {
   display: flex;
+  gap: 10px;
   justify-content: center;
   flex-direction: column;
 
@@ -223,6 +224,7 @@ h2 {
 
 .img_estudando{
   display: flex;
+  margin-top: 30px;
   max-width: 30px;
   border-radius: 5px;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -451,3 +453,271 @@ input::placeholder, textarea::placeholder {
 .btn-contato {
   color: #1a1a1a;
 }
+
+
+.projetos {
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  gap: 40px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Permite que os cards fiquem responsivos */
+}
+
+.card_titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  
+}
+
+
+.card_ , .card {
+    
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Tamanho fixo para os cards ficarem iguais */
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.card_:hover, .card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card_ img, .card img {
+  width: 100%; /* Garante que a imagem se ajuste ao card */
+  height: auto;
+  border-radius: 8px;
+}
+
+.card_title h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card_descricao p {
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+.card_botao {
+  margin-top: 10px;
+}
+
+.projeto_btn {
+  background-color: #00c851; /* Verde para combinar com a imagem */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.projeto_btn:hover {
+  background-color: #007e33;
+}
+
+
+
+.projetos {
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  gap: 40px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Permite que os cards fiquem responsivos */
+  align-items: stretch;
+}
+
+.card_, .card {
+  background-color: #181818; /* Cor de fundo */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Tamanho fixo */
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_:hover, .card:hover {
+  transform: scale(1.05); /* Efeito de zoom */
+}
+
+.card_ img, .card img {
+  width: 100%; /* Garante que a imagem se ajuste ao card */
+  height: auto;
+  max-height: 180px; /* Limita o tamanho da imagem */
+  border-radius: 8px;
+}
+
+.card_title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card_descricao p {
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+.card_botao {
+  margin-top: 10px;
+}
+
+.projeto_btn {
+  background-color: #00c851; /* Verde */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.projeto_btn:hover {
+  background-color: #007e33;
+}
+
+
+
+.projetos {
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  align-items: stretch; /* Faz todos terem a mesma altura */
+  gap: 40px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Permite que os cards se ajustem em telas menores */
+}
+
+.card_, .card {
+  background-color: #181818; /* Cor de fundo */
+  border: 1px solid #fff; /* Borda branca */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Tamanho fixo */
+  min-height: 450px; /* Mantém todos os cards com a mesma altura */
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_:hover, .card:hover {
+  transform: scale(1.05); /* Efeito de zoom */
+}
+
+.card_ img, .card img {
+  width: 100%; /* Garante que a imagem se ajuste ao card */
+  height: auto;
+  max-height: 180px; /* Limita o tamanho da imagem */
+  border-radius: 8px;
+}
+
+.card_title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card_descricao p {
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+.card_botao {
+  margin-top: auto; /* Mantém o botão no final */
+}
+
+.projeto_btn {
+  background-color: #00c851; /* Verde */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.projeto_btn:hover {
+  background-color: #007e33;
+}
+
+.projetos {
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  gap: 40px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Permite que os cards fiquem responsivos */
+  max-width: 900px; /* Ajusta o tamanho da área total */
+  margin: 0 auto; /* Centraliza o container dos projetos */
+}
+
+.card_, .card {
+  background-color: #181818; /* Cor de fundo */
+  border: 1px solid #fff; /* Borda branca */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Mantém os cards do mesmo tamanho */
+  min-height: 450px; /* Garante que os cards tenham a mesma altura */
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_:hover, .card:hover {
+  transform: scale(1.05); /* Efeito de zoom */
+}
+
+.card_ img, .card img {
+  width: 100%; /* Ajusta a largura da imagem ao card */
+  height: auto;
+  max-height: 180px; /* Limita o tamanho da imagem */
+  border-radius: 8px;
+}
+
+.card_title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card_descricao p {
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+.card_botao {
+  margin-top: auto; /* Mantém o botão no final do card */
+}
+
+.projeto_btn {
+  background-color: #00c851; /* Verde */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.projeto_btn:hover {
+  background-color: #007e33;
+}
+
+
